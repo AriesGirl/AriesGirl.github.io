@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>js实现tab</title>
+    <link rel="stylesheet" href="../public/reset.css">
+    <style>
+        .tab-wp{
+            /*width: 500px;*/
+            /*height: 50px;*/
+            display: inline-block;
+            background-color: #ddd;
+        }
+        .tab-head li{
+            float: left;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .tab-head li.on{
+            background-color: #000;
+            color:#fff;
+        }
+        .tab-body div{
+            height: 300px;
+            display: none;
+            text-align: center;
+            line-height: 300px;
+        }
+        .tab-body div.onn{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="tab-wp">
+        <ul id="tabHead" class="tab-head">
+            <li class="on">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div id="tabbody" class="tab-body clear">
+            <div class="onn">111111111</div>
+            <div>222222222</div>
+            <div>333333333</div>
+            <div>444444444</div>
+        </div>
+    </div>
+
+    
+
+    <script src="../../jQuery/jquery-1.11.1.min.js"></script>
+    <script src="../public/public.js"></script>
+    <script src="js/tab.js"></script>
+</body>
+</html>
